@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 1 </title>
+</head>
+<body>
+    price: <input type="number" class="price" value="500" readonly>
+    quantity; <input type="number" class="quan">
+    total: <input type="number" class="tot">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+       $(document).ready(function() {
+       $(".quan") .blur (function() {
+       var x = $(this) .val ();
+       var Y = $(".price") .val();
+       var product = x * Y;
+       $ (".tot") .val(product);
+
+
+    });
+
+
+    });
+
+
+
+
+</script>
+</html>
